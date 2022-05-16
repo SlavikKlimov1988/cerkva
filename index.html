@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/style/style.css">
+   <link rel="stylesheet" href="style/style.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
    <title>Document</title>
 </head>
@@ -27,7 +27,7 @@
             <a class="nav-link" href="#">МІСІЯ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ЗВІТ</a>
+            <a class="nav-link" href="#report">ЗВІТ</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#"></a>
@@ -38,10 +38,31 @@
 </div>
 </header>
 <body>
+  <!-- modal -->
+                    
    <div class="block">
+    <!-- <div class="modal">
+      <form action="">
+          <div class="modal__content">
+              <h2 class="modal__title">ЗАЯВКА</h2>
+              <div class="modal__input">
+                <label for="name">ІМ'Я</label>
+                <input type="text" id="name" name="name" placeholder="Введіть ім'я">
+              </div>
+              <div class="modal__input">
+                <label for="phone">ТЕЛЕФОН</label>
+                <input type="text" id="phone" name="phone" placeholder="Введіть телефон">
+              </div>
+              <div class="modal__input">
+                <label for="email">ЕМЕЙЛ</label>
+                <input type="text" id="email" name="email" placeholder="Введіть емейл">
+              </div>
+      </form>
+    </div> -->
       <section class="hero">
-         <h1 class="hero__titel">ХРИСТІЯНСЬКО БЛАГОДІЙНИЙ ФОНД</h1>
-         <button type="button" class="hero__btn">ПОМІЧ</button>
+         <h1 class="hero__titel">ХРИСТИЯНСЬКО БЛАГОДІЙНИЙ ФОНД</h1>
+         <h3>допомога ЗСУ</h3>
+         <button type="button" id="btn" class="hero__btn">ПОМІЧ</button>
       </section>
       <!-- ------------------------------------------------- -->
       <section class="about">
@@ -77,7 +98,7 @@
          <button class="amunicia__btn">ДОПОМОГА</button>
       </section>
             <!-- ------------------------------------------------- -->
-      <section class="report">
+      <section class="report" id="report">
          <h2 class="report__title">ЗВІТ ПРО ЗАКУПІВЛІ</h2>
          <table class="table table-striped">
             <thead>
@@ -112,7 +133,7 @@
       </section>
             <!-- ------------------------------------------------- -->
       <section class="slider">
-         <h2 class="slider__titel">ГАЛЕРЕЯ</h2>
+         <h2 class="slider__titel" id="galery">ГАЛЕРЕЯ</h2>
          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -153,9 +174,11 @@
           </div>
       </section>      
    </div>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-   <script src="/js/index.js"></script>
+   
 </body>
+<script src="./js/modal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   <script src="/js/index.js"></script>
       <!-- ------------------------------------------------- -->
       <div class="footer-dark">
          <footer>
