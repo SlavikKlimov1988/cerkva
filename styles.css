@@ -59,7 +59,6 @@ button:hover{
 
 /* list */
 ul{
-   padding: 0;
    margin: 0;
    list-style: none;
    display: flex;
@@ -124,7 +123,7 @@ a:hover{
 .contakt,
 .help{
    
-   background: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../imeg/hero-min.jpg);
+   background: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(imeg/hero-min.jpg);
    max-width: 1600px;
    margin: 0 auto;
    background-size: cover;
@@ -137,7 +136,7 @@ a:hover{
    margin-bottom: 60px;
 }
 .contakt{
-   background: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/imeg/contact-us_36325-2135.webp);
+   background: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(imeg/contact-us_36325-2135.webp);
    background-repeat: no-repeat;
    max-width: 1600px;
    margin: 0 auto;
@@ -146,7 +145,7 @@ a:hover{
    background-attachment: fixed;
 }
 .help{
-   background: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/imeg/воїни.jpg);
+   background: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(imeg/воїни.jpg);
    background-repeat: no-repeat;
    max-width: 1600px;
    margin: 0 auto;
@@ -199,12 +198,16 @@ a:hover{
    flex-wrap: wrap;
 }
 .team__item{
+   margin-right: 20px;
    margin-bottom: 20px;
    background-color: var(--color-tertiary);
-   width: 220px;
+   width: 210px;
    height: 260px;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 0px 0px 4px 4px;
+}
+.team__item:last-child{
+   margin-right: 0;
 }
 
 
@@ -230,12 +233,14 @@ a:hover{
 .footer__items{
    text-align: center;
    justify-content: left;
+   
 }
 .row{
    padding: 50px 0;
 }
 .footer__item{
    margin-right: 40px;
+   
 }
 .footer__contackt{
    padding-right: 50px;
@@ -243,3 +248,6 @@ a:hover{
 .footer__contackt-items{
   display: flex;
 }
+.footer__contackt-item{
+   padding: 0;
+ }
