@@ -255,5 +255,13 @@ a:hover{
    .contakts{
       display: none;
    }
-    
+    .mision{
+       flex-direction: column;
+    }
+    .about{
+       flex-direction: column;
+    }
+    .header{
+       flex-wrap: wrap;
+    }
  }
