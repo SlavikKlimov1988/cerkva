@@ -16,19 +16,24 @@ html{
 .for-bg{
    background-color: var(--color-bgcolor);
 }
-section{
-   outline: #212121 solid 1px;
-}
+
 .conteiner{
    max-width: 1200px;
    margin: 0 auto;
    padding: 0 15px;
 }
 body{
-   color: #2a2a2a;
+   /* color: #2a2a2a; */
    margin: 0;
 }
 /* button */
+.icon{
+   margin-left: 10px;
+   width: 20px;
+   height: 20px;
+   background-size: contain;
+
+}
 button{
    background-color: var(--color-secondary);
    color: var(--color-tertiary);
@@ -37,6 +42,7 @@ button{
    border-radius: 4px;
    padding: 10px 30px;
    text-align: center;
+   align-items: center;
 }
 .butn__text{
    font-family: 'Roboto';
@@ -50,9 +56,9 @@ button:hover{
    color: var(--color-secondary);
    border: 2px solid var(--color-secondary);
 }
+
 /* list */
 ul{
-   justify-content: space-around;
    padding: 0;
    margin: 0;
    list-style: none;
@@ -73,12 +79,12 @@ a{
    text-decoration: none;
    color: var(--color-href);
    font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
-}
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.02em;
+   }
 a:hover{
    color: var(--color-href-hover);
 }
@@ -102,6 +108,9 @@ a:hover{
    justify-content: space-between;
    align-items: center;
 }
+.contakts-img{
+   margin-right: 10px;
+}
 .contakts__link{
    margin-right: 10px;
    font-weight: 500;
@@ -114,9 +123,36 @@ a:hover{
 .hero,
 .contakt,
 .help{
+   
+   background: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../imeg/hero-min.jpg);
+   max-width: 1600px;
+   margin: 0 auto;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   
    text-align: center;
+   padding-top: 200px;
    padding-bottom:200px ;
    margin-bottom: 60px;
+}
+.contakt{
+   background: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/imeg/contact-us_36325-2135.webp);
+   background-repeat: no-repeat;
+   max-width: 1600px;
+   margin: 0 auto;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+}
+.help{
+   background: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/imeg/воїни.jpg);
+   background-repeat: no-repeat;
+   max-width: 1600px;
+   margin: 0 auto;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
 }
 .hero__sub-titel{
    margin-bottom: 40px;
@@ -181,4 +217,29 @@ a:hover{
 .mision__items{
    display: flex;
    flex-direction: column;
+   justify-content: space-between;
+}
+
+.footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--color-primary);
+   color: var(--color-tertiary)!important;
+}
+.footer__items{
+   text-align: center;
+   justify-content: left;
+}
+.row{
+   padding: 50px 0;
+}
+.footer__item{
+   margin-right: 40px;
+}
+.footer__contackt{
+   padding-right: 50px;
+}
+.footer__contackt-items{
+  display: flex;
 }
