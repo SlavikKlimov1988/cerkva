@@ -241,7 +241,10 @@ a:hover{
 }
 .footer__item{
    margin-right: 40px;
-   
+   background: rgba(255, 255, 255, 0.1);
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
 }
 .footer__contackt{
    padding-right: 50px;
@@ -251,6 +254,10 @@ a:hover{
 }
 .footer__contackt-item{
    padding: 0;
+ }
+ .footer-imeg-item1:hover{
+
+   border: 2px solid var(--color-tertiary);
  }
  @media (max-width: 768px){
    .contakts{
